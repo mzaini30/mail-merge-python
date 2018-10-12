@@ -1,3 +1,10 @@
+![](gambar/ss.png)
+
+# Cara Menggunakan
+
+Buka `list.py` kemudian edit skrip di dalamnya:
+
+```python
 nama = [
 	'achmad zais',
 	'agus rohadi',
@@ -41,3 +48,19 @@ nilai = [
 	'75',
 	'75'
 ]
+```
+
+Buka `app.py` terus sesuaikan isinya dengan template yang kamu buat:
+
+```python
+from list import *
+
+for n, x in enumerate(nama):
+	print(f'''{nama[n]} : {nilai[n]}''')
+```
+
+Buka Terminal lalu ketik:
+
+```bash
+python3.6 app.py > hasil.txt
+```
